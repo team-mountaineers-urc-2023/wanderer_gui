@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CurrentDisplay</class>
+ <widget class="QWidget" name="CurrentDisplay">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>116</width>
+    <height>744</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>CurrentDisplay</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="3,2">
+   <property name="leftMargin">
+    <number>7</number>
+   </property>
+   <property name="topMargin">
+    <number>10</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="title">
+      <string>Arm</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="2" column="0">
+       <widget class="CurrentWidget" name="sh" native="true"/>
+      </item>
+      <item row="0" column="0">
+       <widget class="CurrentWidget" name="gr" native="true"/>
+      </item>
+      <item row="2" column="1">
+       <widget class="CurrentWidget" name="el" native="true"/>
+      </item>
+      <item row="0" column="1">
+       <widget class="CurrentWidget" name="rl" native="true"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="CurrentWidget" name="dl" native="true"/>
+      </item>
+      <item row="1" column="1">
+       <widget class="CurrentWidget" name="dr" native="true"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="title">
+      <string>Wheels</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="0">
+       <widget class="CurrentWidget" name="lb" native="true"/>
+      </item>
+      <item row="1" column="1">
+       <widget class="CurrentWidget" name="rb" native="true"/>
+      </item>
+      <item row="0" column="0">
+       <widget class="CurrentWidget" name="lf" native="true"/>
+      </item>
+      <item row="0" column="1">
+       <widget class="CurrentWidget" name="rf" native="true"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CurrentWidget</class>
+   <extends>QWidget</extends>
+   <header>urc_gui_common.widgets.current_widget</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
